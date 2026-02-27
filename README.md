@@ -1,7 +1,3 @@
-Here’s a **simplified version** of your README:
-
----
-
 # Guess the Number — Socket Game
 
 A simple number guessing game made with Python using sockets.
@@ -67,6 +63,57 @@ If the server is running on a different computer:
 4. Run the client again.
 
 ---
+## Example Gameplay
+
+### Server terminal:
+
+[SERVER] Listening on 0.0.0.0:5000...
+[SERVER] Waiting for a client to connect...
+
+[SERVER] Client connected from 127.0.0.1:54321
+[SERVER] Secret number is 42
+
+[SERVER] Guess #1: 50
+
+[SERVER] Guess #2: 25
+
+[SERVER] Guess #3: 37
+
+[SERVER] Guess #4: 43
+
+[SERVER] Guess #5: 42
+
+[SERVER] Client guessed correctly in 5 attempt(s)!
+
+[SERVER] Closing connections...
+
+[SERVER] Done.
+
+### Client terminal:
+
+[CLIENT] Connecting to localhost:5000...
+[CLIENT] Connected!
+
+Server: Welcome! I'm thinking of a number between 1 and 100. Take a guess!
+
+Your guess (1-100): 50
+Server: Too high! Try again.
+
+Your guess (1-100): 25
+Server: Too low! Try again.
+
+Your guess (1-100): 37
+Server: Too low! Try again.
+
+Your guess (1-100): 43
+Server: Too high! Try again.
+
+Your guess (1-100): 42
+Server: Correct! You got it in 5 attempt(s)!
+
+You win! Game over.
+
+[CLIENT] Disconnected.
 
 ## What Happens If Something Goes Wrong?
 
